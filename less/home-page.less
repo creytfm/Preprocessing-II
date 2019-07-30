@@ -3,26 +3,25 @@
     margin: 10px 0;
     display: flex;
     width: 100%;
+  }
+
+  .inverse-content {
+    padding-bottom: 30px;
+
+    .text-content {
+      padding-left: 1%;
+      padding-right: 0;
     }
 
-    .inverse-content {
-      padding-bottom: 30px;
-
-      .text-content {
-        padding-left: 1%;
-        padding-right: 0;
-      }
-
-      .img-content {
-        padding-right: 1%;
-        padding-left: 0;
-      }
+    .img-content {
+      padding-right: 1%;
+      padding-left: 0;
     }
+  }
 
-    .content-destination {
-      width: 75%;
-      margin: 0 auto 30px;
-
+  .content-destination {
+    width: 75%;
+    margin: 0 auto 30px;
 
     .content-pick {
       padding-top: 30px;
@@ -37,21 +36,32 @@
   }
 }
 // home
-section.card-images{
+section.card-images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
-.card-images img{
+.card-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition:         transform .8s ease-in-out;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 img:hover {
--webkit-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   transform: scale(1.25, 1.25);
+}
+.image { 
+  position: relative; 
+  width: 100%; 
+
+h2 { 
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
+}
 }
